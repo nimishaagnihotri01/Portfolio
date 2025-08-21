@@ -30,9 +30,13 @@
 
 @layer base {
   body {
-    @apply bg-black text-white;
+    @apply bg-white text-black;          /* Light mode default */
+  }
+  .dark body {
+    @apply bg-black text-white;          /* Dark mode override */
   }
 }
+
 
 @utility star {
   @apply absolute rounded-full bg-white;

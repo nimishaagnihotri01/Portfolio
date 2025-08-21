@@ -4,16 +4,26 @@ export const StarBackground = () => {
   const [stars, setStars] = useState([]);
   const [meteors, setMeteors] = useState([]);
 
+  // Update stars and meteors on mount and resize
   useEffect(() => {
-    generateStars();
-    generateMeteors();
+    const generate = () => {
+      generateStars();
+      generateMeteors();
+    };
+
+    // Initial generate
+    generate();
+
+    // Add resize event listener
+    window.addEventListener("resize", generate);
+
+    return () => window.removeEventListener("resize", generate);
   }, []);
 
-  // Generate stars
   const generateStars = () => {
-    const numberOfStars = Math.floor(
-      (window.innerWidth * window.innerHeight) / 8000
-    );
+    const screenArea = window.innerWidth * window.innerHeight;
+    const densityScalar = window.innerWidth < 640 ? 12000 : 8000;
+    const numberOfStars = Math.floor(screenArea / densityScalar);
 
     const newStars = [];
     for (let i = 0; i < numberOfStars; i++) {
@@ -29,15 +39,15 @@ export const StarBackground = () => {
     setStars(newStars);
   };
 
-  // Generate exactly 4 meteors
   const generateMeteors = () => {
+    const count = window.innerWidth < 640 ? 2 : 4; // fewer meteors on small screens
     const newMeteors = [];
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < count; i++) {
       newMeteors.push({
         id: i,
-        x: Math.random() * 100,
-        y: Math.random() * 100,
-        duration: Math.random() * 6 + 6, // 3s - 6s
+        x: Math.random() * 90 + 5, // Avoid edges (5% to 95%)
+        y: Math.random() * 80 + 5, // Avoid edges vertically too
+        duration: Math.random() * 6 + 6,
       });
     }
     setMeteors(newMeteors);
@@ -45,7 +55,6 @@ export const StarBackground = () => {
 
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-      {/* Stars */}
       {stars.map((star) => (
         <div
           key={star.id}
@@ -61,7 +70,6 @@ export const StarBackground = () => {
         />
       ))}
 
-      {/* Meteors */}
       {meteors.map((meteor) => (
         <div
           key={meteor.id}
