@@ -3,25 +3,25 @@ import {cn} from '@/lib/utils';
 
 const skills=[
     //frontend
-    {name:"HTML/CSS", level: 95, category:"frontend"},
-    {name:"javascript", level: 90, category:"frontend"},
+    {name:"HTML/CSS", level: 100, category:"frontend"},
+    {name:"javascript", level: 100, category:"frontend"},
     {name:"react", level: 95, category:"frontend"},
-    {name:"typescript", level: 85, category:"frontend"},
-    {name:"tailwind css", level: 90, category:"frontend"},
-    {name:"next.js", level: 80, category:"frontend"},
+    {name:"typescript", level: 80, category:"frontend"},
+    {name:"tailwind css", level: 95, category:"frontend"},
+    {name:"Bootstrap", level: 100, category:"frontend"},
 
     //backend
-    {name:"node.js", level: 80, category:"backend"},
-    {name:"express", level: 75, category:"backend"},
-    {name:"mongo", level: 70, category:"backend"},
-    {name:"sql", level: 65, category:"backend"},
-    {name:"graphql", level: 60, category:"backend"},
+    {name:"node.js", level: 90, category:"backend"},
+    {name:"express.js", level: 75, category:"backend"},
+    {name:"mongo", level: 90, category:"backend"},
+    {name:"sql", level: 70, category:"backend"},
+    {name:"Postman", level: 70, category:"backend"},
 
     //tools
-    {name:"git/github", level: 90, category:"tools"},
-    {name:"docker", level: 70, category:"tools"},
-    {name:"kubernetes", level: 85, category:"tools"},
-    {name:"figma", level: 95, category:"tools"},
+    {name:"git/github", level: 100, category:"tools"},
+    {name:"Vs code", level: 100, category:"tools"},
+    {name:"Canvas", level: 85, category:"tools"},
+    {name:"Wordpress", level: 70, category:"tools"},
 ];
 
 const categories=["all","frontend","backend","tools"]

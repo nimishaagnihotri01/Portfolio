@@ -8,8 +8,8 @@ const projects=[
         description:"dummy lorem epsum data add it later with your reference",
         image:"/projects/i1.png",
         tags: ["React","tailwind"],
-        demoUrl:"#",
-        githubUrl:"#"
+        demoUrl:"",
+        githubUrl:"https://github.com/nimishaagnihotri01/Portfolio"
     },
     {
         id:2,
@@ -17,8 +17,8 @@ const projects=[
         description:"dummy lorem epsum data add it later with your reference",
         image:"/projects/i2.png",
         tags: ["React","mongo","node","tailwind"],
-        demoUrl:"#",
-        githubUrl:"#"
+        demoUrl:"https://nimishaagnihotri01.github.io/virtual-Assistant/",
+        githubUrl:"https://github.com/nimishaagnihotri01/virtual-Assistant"
     },
     {
         id:3,
@@ -26,18 +26,20 @@ const projects=[
         description:"dummy lorem epsum data add it later with your reference",
         image:"/projects/i3.png",
         tags: ["html","css","bootstrap","javascript"],
-        demoUrl:"#",
-        githubUrl:"#"
+        demoUrl:"https://nimishaagnihotri01.github.io/chahat_masale-website/",
+        githubUrl:"https://github.com/nimishaagnihotri01/chahat_masale-website"
     },
 ]
 
 export const ProjectsSection=()=>{
+
     return <section id="projects" className="py-24 px-4 relative">
         <div className="container mx-auto max-w-5xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
                 {" "}
                 Featured <span className="text-primary">Projects</span></h2>
-                <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quos libero impedit numquam accusantium. In.</p>
+                <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">Here are some of my featured projects that highlight my skills in frontend and full-stack development. 
+    Each project reflects my interest in building clean, responsive, and user-friendly applications.</p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project, key)=>(
