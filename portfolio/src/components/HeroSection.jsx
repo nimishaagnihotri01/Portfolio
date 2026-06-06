@@ -10,7 +10,8 @@ export const HeroSection=()=>{
                     <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">{" "}Agnihotri</span>
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-A computer engineering student with a strong foundation in programming and development. Skilled in C, C++, JavaScript, and TypeScript, with hands-on experience in building websites using the MERN stack.                </p>
+Computer Engineering student with expertise in Java, JavaScript, Devops , and MERN stack development. Strong foundation in data structures, algorithms, and building full-stack web applications.
+                </p>
                 <div className="pt-4 opacity-0 animate-fade-in-delay-4">
                     <a href="#projects" className="cosmic-button">
                         View My Work

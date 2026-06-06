@@ -1,35 +1,28 @@
 import {ExternalLink,Github,ArrowRight} from "lucide-react";
 
 
-const projects=[
-    {
-        id:1,
-        title:"Portfolio",
-        description:"dummy lorem epsum data add it later with your reference",
-        image:"/projects/i1.png",
-        tags: ["React","tailwind"],
-        demoUrl:"",
-        githubUrl:"https://github.com/nimishaagnihotri01/Portfolio"
-    },
-    {
-        id:2,
-        title:"Virtual Assistant in MERN",
-        description:"dummy lorem epsum data add it later with your reference",
-        image:"/projects/i2.png",
-        tags: ["React","mongo","node","tailwind"],
-        demoUrl:"https://nimishaagnihotri01.github.io/virtual-Assistant/",
-        githubUrl:"https://github.com/nimishaagnihotri01/virtual-Assistant"
-    },
-    {
-        id:3,
-        title:"frontend e-commerce website",
-        description:"dummy lorem epsum data add it later with your reference",
-        image:"/projects/i3.png",
-        tags: ["html","css","bootstrap","javascript"],
-        demoUrl:"https://nimishaagnihotri01.github.io/chahat_masale-website/",
-        githubUrl:"https://github.com/nimishaagnihotri01/chahat_masale-website"
-    },
-]
+const projects = [
+  {
+    id: 1,
+    title: "PrepTrack",
+    description:
+      "A placement preparation platform designed to help students organize DSA, aptitude, and interview preparation with structured tracking and progress monitoring.",
+    image: "/projects/i1.png",
+    tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+    demoUrl: "https://prep-track-six.vercel.app/",
+    githubUrl: "https://github.com/nimishaagnihotri01/prepTrack",
+  },
+  {
+    id: 2,
+    title: "Virtual Assistant in MERN",
+    description:
+      "An AI-powered virtual assistant built using the MERN stack that processes user queries and delivers intelligent responses through an interactive chat interface.",
+    image: "/projects/i2.png",
+    tags: ["React", "MongoDB", "Node.js", "Express", "Tailwind CSS"],
+    demoUrl: "https://virtual-assistant-pi-cyan.vercel.app/",
+    githubUrl: "https://github.com/nimishaagnihotri01/Virtual-Assistant",
+  },
+];
 
 export const ProjectsSection=()=>{
 
